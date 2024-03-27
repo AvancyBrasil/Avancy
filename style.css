@@ -250,7 +250,7 @@ main {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
-    /*clip-path: polygon(0 0, 0 0, 15% 25%, 0 0);*/
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 600%);
 }
 
 .project__showcase-right__content {
