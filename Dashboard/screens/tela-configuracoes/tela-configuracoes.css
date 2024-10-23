@@ -1,0 +1,120 @@
+.card-storage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 50px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    font-family: var(--text-font-family);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+    width: 700px;
+}
+
+.card-storage .left-card-storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-card-storage .progress-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--grey-color);
+}
+
+
+.left-card-storage .inside-circle {
+    border-radius: 50%;
+    background: var(--white-color);
+    padding: 75px;
+}
+
+.left-card-storage .progress-circle-desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-card-storage .progress-circle-desc h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.left-card-storage .progress-circle-desc span {
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.right-card-storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right-card-storage .title-card-storage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-card-storage span {
+    font-size: 75px;
+    color: #005cdd;
+}
+
+.right-card-storage h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--title-font-family);
+}
+
+.right-card-storage .delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgb(163, 0, 0);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.right-card-storage .delete-button #icon-button {
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.right-card-storage .delete-button .text-button {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.card-language {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-language h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-language select {
+    padding: 5px 10px;
+    outline: none;
+    font-size: 15px;
+}
+
