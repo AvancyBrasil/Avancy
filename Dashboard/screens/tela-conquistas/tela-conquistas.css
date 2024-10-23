@@ -1,0 +1,90 @@
+.card-achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    font-family: var(--text-font-family);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.active.secund-level {
+    color: #9d9d9d;
+}
+
+.active.third-level {
+    color: #ffd700;
+}
+
+.card-achievements span {
+    font-size: 150px;
+}
+
+.card-achievements h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-achievements .achievements-desc {
+    font-size: 17.5px;
+    font-weight: 500;
+}
+
+.diagonal-faixa {
+    position: absolute;
+    top: -150px;
+    right: 1;
+    width: 200%; /* Largura maior que o card para atravessá-lo */
+    height: 30px; /* Altura da faixa */
+    transform: rotate(45deg); /* Rotação para criar a diagonal */
+    z-index: 1; /* Certifique-se de que fique acima do conteúdo */
+}
+
+.lock-frame {
+    position: absolute;
+    top: 70px;
+    background: #000000;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.lock-frame span {
+    font-size: 65px;
+    color: var(--main-color);
+}
+
+.image-frame.inactive {
+    opacity: 0.09;
+}
+
+.diagonal-faixa.first-level {
+    color: #905923;
+    background-color: #905923;
+}
+
+.diagonal-faixa.secund-level {
+    color: #9d9d9d;
+    background-color: #9d9d9d;
+}
+
+.diagonal-faixa.third-level {
+    color: #ffd700;
+    background-color: #ffd700;
+}
+
+.diagonal-faixa.inactive-level {
+    color: var(--dark-grey-color);
+    background-color: #000000;
+}
+
+@media screen and (max-width: 1540px) {
+    .card-achievements {
+        width: 100%;
+    }
+}

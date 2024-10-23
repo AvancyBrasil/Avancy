@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Find Website | Dashboard</title>
+    <!-- Google Icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Ico link -->
+    <link rel="shortcut icon" href="../Dashboard/images/icone.ico" type="image/x-icon">
+    <script src="./script/verificaToken.js" defer></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../Dashboard/images/dashboard-sidebar-logo.png" alt="Logo Find simplificado com apenas o ícone">
+            <h2>Find Website</h2>
+        </div>
+        <ul class="sidebar-links">
+            <h4>
+                <span>Menu Principal</span>
+                <div class="menu-separator"></div>
+            </h4>
+            <li>
+                <a href="../Dashboard/index.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">chat</span>
+                    Chat
+                </a>
+            </li>
+            <li>
+                <a href="../Dashboard/screens/tela-loja/tela-loja.html">
+                    <span class="material-symbols-outlined">store</span>
+                    Loja
+                </a>
+            </li>
+            <li>
+                <a href="../Dashboard/screens/tela-produtos/tela-produtos.html">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    Produtos
+                </a>
+            </li>
+            <h4>
+                <span>Social</span>
+                <div class="menu-separator"></div>
+            </h4>
+            <li>
+                <a href="../Dashboard/screens/tela-avaliacao/tela-avaliacao.html">
+                    <span class="material-symbols-outlined">star</span>
+                    Avaliações
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="material-symbols-outlined">send</span>
+                    Postagens
+                </a>
+            </li>
+            <li>
+                <a href="../Dashboard/screens/tela-conquistas/tela-conquistas.html">
+                    <span class="material-symbols-outlined">trophy</span>
+                    Conquistas
+                </a>
+            </li>
+            <h4>
+                <span>Conta</span>
+                <div class="menu-separator"></div>
+            </h4>
+            <li>
+                <a href="../Dashboard/screens/tela-configuracoes/tela-configuracoes.html">
+                    <span class="material-symbols-outlined">settings</span>
+                    Configurações
+                </a>
+            </li>
+            <li>
+                <a id="logout" href="../Login/login.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    Sair
+                </a>
+            </li>
+        </ul>
+        <div class="user-account">
+            <div class="user-profile">
+                <img src="../Dashboard/images/profile.jpg" alt="">
+                <div class="user-detail">
+                    <h3 id="empresa-name">Nome da Empresa</h3>
+                    <span id="email-user">email@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section class="content">
+        <nav>
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" placeholder="Pesquisar...">
+                    <span class="material-symbols-outlined" id="search-icon">search</span>
+                </div>
+            </form>
+        </nav>
+
+        <main>
+            <h1 class="title">Dashboard</h1>
+            <ul class="breadcrumbs">
+                <li><a href="#">Menu Principal</a></li>
+                <li class="diviser">/</li>
+                <li><a href="" class="active">Dashboard</a></li>
+            </ul>
+
+            <div class="info-data">
+                <div class="card-shop-status">
+                    <div class="left-status">
+                        <img src="../Dashboard/images/profile.jpg" alt="">
+                    </div>
+                    <div class="right-status">
+                        <h2 id="empresa-name">Nome da Empresa</h2>
+                        <span id="email-user">Email da empresa</span>
+                        <div class="shop-status">
+                            <div class="status-content">
+                                <span class="material-symbols-outlined">store</span>
+                            </div>
+                            <h4>Aberto</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-opening-hours">
+                    <h2>
+                        Horarios
+                    </h2>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Segunda-feira</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Terça-feira</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section class="active">
+                        <div class="left-section">
+                            <div class="icon-open">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <span class="day">Quarta-feira</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Quinta-feira</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Sexta-feira</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Sábado</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                    <section>
+                        <div class="left-section">
+                            <span class="day">Domingo</span>
+                        </div>
+                        <div class="right-section">
+                            07:00 às 21:00
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="./script/script.js"></script>
+</body>
+</html>
